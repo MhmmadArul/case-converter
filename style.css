@@ -1,0 +1,156 @@
+/* ===== GLOBAL ===== */
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background: #f3f4f6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container */
+section,
+.wrapper-textInput {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+/* ===== TITLE ===== */
+section {
+    margin-top: 50px;
+}
+
+.choose {
+    text-align: center;
+    margin-bottom: 10px;
+    ;
+}
+
+.choose h2 {
+    color: #111827;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* ===== BUTTONS ===== */
+.btn-case,
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-case button,
+.btn button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+/* Button colors modern pastel */
+.btn-uppercase {
+    background: #4f46e5;
+    color: white;
+}
+
+.btn-uppercase:hover {
+    background: #4338ca;
+}
+
+.btn-lower {
+    background: #06b6d4;
+    color: white;
+}
+
+.btn-lower:hover {
+    background: #0ea5e9;
+}
+
+.button-copy {
+    background: #10b981;
+    color: white;
+}
+
+.button-copy:hover {
+    background: #059669;
+}
+
+.button-reset {
+    background: #ef4444;
+    color: white;
+}
+
+.button-reset:hover {
+    background: #dc2626;
+}
+
+/* ===== TEXT AREA ===== */
+.wrapper-textInput {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    background: #f9fafb;
+    transition: 0.2s;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.3);
+}
+
+/* Output */
+#text-output {
+    background: #f3f4f6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+    .wrapper-textInput {
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 100%;
+        height: 180px;
+    }
+
+    .btn-case button,
+    .btn button {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .btn-case,
+    .btn {
+        flex-direction: column;
+    }
+
+    .btn-case button,
+    .btn button {
+        width: 100%;
+    }
+}

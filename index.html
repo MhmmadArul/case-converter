@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="choose">
+            <h2>Pilih Format Case : </h2>
+        </div>
+        <div class="btn-case">
+            <button class="btn-uppercase" onclick="convertUppercase()">Uppercase</button>
+            <button class="btn-lower">Lowercase</button>
+        </div>
+    </section>
+
+    <div class="wrapper-textInput">
+        <div class="before-convert">
+            <textarea name="text-input" id="text-input" placeholder="Masukan teks disini..."></textarea>
+        </div>
+        <div class="after-convert">
+            <textarea name="text-output" id="text-output" disabled></textarea>
+            <div class="btn">
+                <button class="button-copy" style="cursor: pointer; font-weight:bold;"><i class="far fa-copy"
+                        style="padding-right: 3px;"></i>Copy</button>
+                <button class="button-reset" style="cursor: pointer; font-weight:bold;"><i class="fas fa-eraser"
+                        style="padding-right: 3px; "></i>Reset</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
