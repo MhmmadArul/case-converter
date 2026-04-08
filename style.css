@@ -124,6 +124,13 @@ textarea:focus {
     background: #f3f4f6;
 }
 
+.text-stats {
+    margin-top: 10px;
+    font-size: 14px;
+    display: flex;
+    gap: 15px;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
 

@@ -48,3 +48,26 @@ btnReset.addEventListener('click', () => {
     outputArea.value = "";
     alert("Teks berhasil dihapus!");
 })
+
+const inputText = document.getElementById("text-input");
+
+const wordCount = document.getElementById("word-count");
+const charCount = document.getElementById("char-count");
+const lineCount = document.getElementById("line-count");
+
+inputText.addEventListener("input", updateStats);
+
+function updateStats() {
+    const text = inputText.value;
+
+    // Character count
+    charCount.textContent = text.length;
+
+    // Word count
+    const words = text.trim().split(/\s+/).filter(word => word.length > 0);
+    wordCount.textContent = text.trim() === "" ? 0 : words.length;
+
+    // Line count
+    const lines = text.split("\n");
+    lineCount.textContent = text === "" ? 0 : lines.length;
+}
