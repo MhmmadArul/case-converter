@@ -39,17 +39,26 @@ btnCopy.addEventListener('click', () => {
         });
 });
 
-const btnReset = document.querySelector('.button-reset')
+const btnReset = document.querySelector('.button-reset');
 
 btnReset.addEventListener('click', () => {
     const inputArea = document.querySelector('#text-input');
     const outputArea = document.querySelector('#text-output');
+
     inputArea.value = "";
     outputArea.value = "";
+
+    updateStats();
+
     alert("Teks berhasil dihapus!");
 })
 
 const inputText = document.getElementById("text-input");
+
+
+inputText.addEventListener("input", () => {
+    updateStats();
+});
 
 const wordCount = document.getElementById("word-count");
 const charCount = document.getElementById("char-count");
